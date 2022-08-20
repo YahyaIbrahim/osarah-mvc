@@ -1,0 +1,44 @@
+server:
+  port: 9595
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimumIdle: 2
+      maximumPoolSize: 10
+      idleTimeout: 12000
+      connectionTimeout: 30000
+      leakDetectionThreshold: 30000
+    url: jdbc:mysql://localhost:3306/osara
+    username: root
+    password: Password
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        connection:
+          characterEncoding: utf-8
+          Charset: utf-8
+          useUnicode: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+management:
+  server:
+    port: 9005
+
+logging:
+  level:
+    org:
+      springframework:
+        security: off
+
