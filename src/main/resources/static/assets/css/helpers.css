@@ -1,0 +1,727 @@
+form.hide-errors p.error-txt, .form-group.hide-error p.error-txt{
+    display: none !important;
+}
+/*.follow-link .followed-icon, .follow-link.followed .follow-icon{*/
+/*  display: none ;*/
+/*}*/
+/* .follow-link.followed .followed-icon{*/
+/*  display: inline-block;*/
+/*}*/
+
+.iti{
+    width: 100%;
+}
+.iti__selected-flag{
+    outline: none !important;
+    background: none !important;
+}
+.iti__arrow{
+    display: none !important;
+}
+.iti__selected-flag{
+    justify-content: center;
+    width: 60px;
+}
+.iti__country{
+    padding: 5px 10px;
+    outline: 0;
+    font-size: 13px;
+    direction: ltr;
+}
+.iti input, .iti input[type=tel], .iti input[type=text]{
+    padding-left: 69px !important;
+    text-align: left;
+    direction: ltr;
+}
+.iti__country-list .mCSB_container{
+    margin: 0 !important;
+    margin-right: 15px !important;
+}
+.iti__country-list{
+    left: 1px;
+    width: 390px;
+    box-shadow: none;
+    white-space: inherit;
+    border-color: #ebebeb;
+    direction: ltr !important;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    border: none;
+    background: #fff;
+    overflow-y: auto;
+}
+.course-overview-section{
+    overflow: hidden;
+}
+/*موجود في صفحة المشاهدة*/
+/*.course-overview-section img{*/
+/*  max-width: 100%;*/
+/*}*/
+.course-content-item.active .title{}
+
+.fstMultipleMode.fstActive .fstResults{
+    opacity: 1;
+    visibility: visible;
+}
+
+.ui-sortable-handle{
+    cursor: move;
+}
+.text-tiny{
+    font-size: .7em;
+}
+.text-small{
+    font-size: .85em;
+}
+.text-big{
+    font-size: 1.4em;
+}
+.text-huge{
+    font-size: 1.8em;
+}
+/*start new style.css*/
+.trainer-big-item .trainer-details h3, .trainer-big-item .trainer-details h3 a{margin: 0;line-height: 23px;font-weight: 700;color: #1a43a8;font-size: 13px;margin-bottom: 5px}
+.chart-label-item.color4:before{background: #ff9d66}
+.chart-label-item.color4 b{color: #ff9d66}
+.course-content-items .course-content-item.completed .status svg.checked{opacity: 1}
+
+/*.toast_message{position: fixed;top: 65px;right: 50%;transform: translateX(50%);padding: 10px 20px;border-radius: 10px;background: #54d69e;color: #fff;font-size: 13px;font-weight: bold;z-index: 999999;box-shadow: 0 10px 15px rgba(69, 79, 88, 0.07);cursor: pointer}*/
+
+
+.swal-footer{text-align: center;padding-bottom: 30px;}
+.swal-button-container{
+    margin: 0 6px;
+}
+.swal-button-container .btn-danger{
+    background: #ff6498 !important;
+    color: #fff !important;
+}
+.swal-button-container .btn{height: 40px;border-radius: 50px;outline: none;border: none;background: #f2f5f8;font-size: 13px;font-weight: 700;color: #393d48;padding: 9px 40px;}
+.swal-button-container .btn-danger:hover{
+    background: #f81e67 !important;
+}
+.swal-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a43a8;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+.swal-text{
+    color: #393d48;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+.swal-modal{
+    border-radius: 10px;
+    padding: 0 25px;
+}
+.swal-button-container .btn{
+    box-shadow: none !important;
+}
+.profile-details .profile-img .btn-loader{
+    display: none;
+}
+.profile-details .profile-img.loadding .btn-loader{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+.course-content-items .course-content-item.active .status svg.play{
+    display: inline;
+    margin-left: 4px;
+    opacity: 1;
+}
+.course-content-items .course-content-item.completed .status svg.play{
+    display: none;
+}
+.course-content-items .course-content-item.active .status{
+    background: #1a43a8;
+    border-color: #1a43a8;
+}
+.course-content-item.active .video-item .title{
+    color: #1a43a8;
+}
+
+.swal-footer{text-align: center;padding-bottom: 30px;}
+.swal-button-container{
+    margin: 0 6px;
+}
+.swal-button-container .btn-danger{
+    background: #ff6498 !important;
+    color: #fff !important;
+}
+.swal-button-container .btn{height: 40px;border-radius: 50px;outline: none;border: none;background: #f2f5f8;font-size: 13px;font-weight: 700;color: #393d48;padding: 9px 40px;}
+.swal-button-container .btn-danger:hover{
+    background: #f81e67 !important;
+}
+.swal-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a43a8;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+.swal-text{
+    color: #393d48;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+.swal-modal{
+    border-radius: 10px;
+    padding: 0 25px;
+}
+.swal-button-container .btn{
+    box-shadow: none !important;
+}
+.profile-details .profile-img .btn-loader{
+    display: none;
+}
+.profile-details .profile-img.loadding .btn-loader{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+.course-content-items .course-content-item.active .status svg.play{
+    display: inline;
+    margin-left: 4px;
+    opacity: 1;
+}
+.course-content-items .course-content-item.completed .status svg.play{
+    display: none;
+}
+.course-content-items .course-content-item.active .status{
+    background: #1a43a8;
+    border-color: #1a43a8;
+}
+.course-content-item.active .video-item .title{
+    color: #1a43a8;
+}
+.profile-details .profile-img{
+    background: transparent;
+}
+.change-courses{
+    border: none !important;
+    outline: none !important;
+    line-height: 28px;
+}
+
+.change-courses svg.loadding{
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation{
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(359deg);
+    }
+}
+.form-group.error .selected-item-toggle.country{
+    border-color: #ff6498;
+}
+.payment-items-table td{
+    font-size: 13px;
+}
+
+.form-wrapper-centered .file-upload{
+    overflow: hidden;
+}
+.blog-text-content img{
+    height: auto !important;
+}
+.blog-text-content p{
+    line-height: 40px;
+}
+
+.article-editor.cke_editable{
+    min-height: auto;
+}
+
+.header-item > a.login.profile{
+    width: 40px;
+}
+
+.float{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 86px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    padding: 0;
+    transition: all 0.3s;
+}
+.float img{
+    width: 20px;margin: 2px;vertical-align: unset;padding: 0px;
+}
+@media (max-width: 480px){
+    #tidio-chat-iframe{
+        bottom: 44px !important;
+    }
+
+    .float{
+        right: 65px;
+    }
+
+    .float.margin-bottom.fixed{
+        bottom: 75px;
+
+    }
+
+    .add-course{
+        height: 247px;
+    }
+
+    .add-course .wrap svg{
+        margin-top: 51px;
+    }
+
+    .add-course .wrap .add-course-btn{
+        margin-top: 60px;
+    }
+
+    .stats-section{
+        margin-top: 40px;
+    }
+
+    .home-section-wrap{
+        margin-bottom: 130px;
+    }
+}
+
+.courses-tabs-wrap{
+    text-align: right;
+}
+
+.blue--btn{font-size: 13px;font-weight: bold;color: #ffffff !important;background: #2edaf4;transition: all 0.3s;border-radius: 50px;width: 160px;text-align: center;display: inline-block;padding: 12px 0;line-height: 20px;outline: none;border: none}
+.blue--btn:hover{background: #393d48}
+.swal-button, .swal-button:focus{
+    outline: none;
+    border: none;
+}
+.how-train-bg ol li{
+    position: relative;
+    padding-right: 30px;
+    margin: 3px 0;
+
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+.how-train-bg ol li:before{
+    content: url(/assets/images/blue-check.svg);
+    width: 20px;
+    height: 20px;
+    background: #8a8e98;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    line-height: 18px;
+    justify-content: center;
+    border-radius: 100%;
+}
+.how-train-section img{
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.how-train-section ul{
+    list-style-type: disc;
+    margin-right: 19px;
+}
+.how-train-section a{
+    text-decoration: underline !important;
+}
+.how-train-section .btn-item a, .how-train-section .primary--btn, .how-train-section .blue--btn{
+    text-decoration: none !important;
+}
+
+.file-input .file-upload{
+    overflow: hidden;
+}
+
+.how-train-section figcaption{
+    background-color: #f7f7f7 !important;
+    border: 1px solid #f7f7f7 !important;
+    color: #333 !important;
+    padding: .8em !important;
+    border-bottom-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    font-size: 12px !important;
+    margin-top: -15px !important;
+    padding-top: 25px !important;
+    padding-right: 30px !important;
+    text-align: center !important;
+}
+.course-video{
+    border-radius: 20px;
+}
+.hint-bar{
+    background: #ff6498;
+}
+
+.hint-bar .hint-wrap .close-hint{
+    background: #e44d80;
+}
+
+.hint-bar .hint-wrap .close-hint:hover{
+    background: #c33766;
+}
+
+.hint-bar .hint-wrap span{
+    color: #000;
+}
+.faq-search > span{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/search.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+.faq-search > span.close{
+    background: url(../images/close.png) no-repeat center center;
+}
+
+.faq-search > span.loading{
+    background: url(../images/tail-spin.svg) no-repeat center center;
+    background-size: 18px 18px;
+}
+.faq-package{
+    margin-bottom: 28px;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+.xdsoft_datepicker.active{
+    width: calc(100% - 15px);
+    padding-bottom: 15px;
+}
+.xdsoft_timepicker.active{
+    width: calc(30% - 16px);
+}
+.xdsoft_datetimepicker{
+    width: 300px;
+    max-width: 100%;
+    padding: 0 !important;
+    border: none;
+    background: #f8f9f9 !important;
+    border-radius: 19px !important;
+    overflow: hidden !important;
+}
+.xdsoft_datetimepicker .xdsoft_label{
+    float: none;
+    background: none;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    cursor: initial;
+}
+button.xdsoft_today_button{
+    display: none !important;
+}
+.xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker{
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #f1f1f1;
+    height: calc(100% + 31px);
+    padding-bottom: 20px;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:not(.xdsoft_scroller){
+    border: none;
+    background: transparent;
+    display: block !important;
+}
+.xdsoft_scroller{
+    display: block !important;
+    background: #ababab !important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current:not(.xdsoft_scroller){
+    background: #1a43a8;
+    box-shadow: #1a43a8 0 1px 3px 0 inset;
+    color: #fff !important;
+    font-weight: 500;
+}
+.xdsoft_time_box{
+    border: none !important;
+}
+.xdsoft_scrollbar{
+    width: 2px;
+    right: 0;
+    top: 0;
+    left: 10px !important;
+    background: #d8d8d8;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:not(.xdsoft_scroller):hover{
+    background: #ababab !important;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_scroller{
+    background: #ababab !important;
+}
+.xdsoft_time_box.xdsoft_scroller_box{
+    padding-left: 17px;
+    padding-right: 6px;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td > div{
+    padding-right: 0;
+    text-align: center;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th{
+    color: #111111;
+    font-size: 15px;
+    cursor: pointer;
+    height: 34px;
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today{
+    color: #111111;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover, .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:not(.xdsoft_scroller):hover{
+    background: #1a43a8 !important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td{
+    border-radius: 5px;
+    max-width: 30px;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box{
+    height: 230px;
+    border-bottom: none;
+}
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div{
+    background: none;
+    border-top: none;
+    color: #565656;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 11px;
+    font-weight: 500;
+    margin: 2px 0;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month, .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled, .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_disabled{
+    opacity: .12;
+    -ms-filter: "alpha(opacity=12)";
+    background: none !important;
+    color: #111111 !important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar th{
+    color: #c8c9cc;
+    font-size: 13px;
+}
+.xdsoft_datetimepicker{
+    font-family: 'NeoSans', sans-serif !important;
+}
+.xdsoft_label i{
+    display: none !important;
+}
+.xdsoft_calendar thead tr{
+    border-bottom: 1px solid #c8c9cc;
+}
+.xdsoft_datetimepicker .xdsoft_next, .xdsoft_datetimepicker .xdsoft_prev, .xdsoft_datetimepicker .xdsoft_today_button{
+    background: none;
+    overflow: visible;
+    opacity: 1;
+    text-indent: initial;
+}
+.xdsoft_timepicker button{
+    display: none !important;
+}
+.choose-time{
+    display: block;
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.xdsoft_monthpicker{
+    margin-top: 10px;
+}
+.xdsoft_next{
+    margin-right: 20px;
+}
+.xdsoft_prev{
+    margin-left: 20px;
+}
+.xdsoft_select{
+    display: none !important;
+}
+.xdsoft_datetimepicker .xdsoft_label:hover > span{
+    text-decoration: none;
+}
+.blue{
+    color: #2edaf4
+}
+.text-gray{
+    color: #8a8e98;
+}
+.text-gray svg{
+    fill: #8a8e98;
+}
+
+#rate_course .modal-content-wrap{
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 20px;
+}
+#rate_course .modal-content{
+    padding: 0;
+    background: none;
+}
+#rate_course .change-courses{
+    position: absolute;
+    left: calc(50% - 9em);
+}
+.rate-modal-wrap{
+    margin-bottom: 20px;
+}
+.course_discount_content > h3{
+    line-height: 30px;
+}
+.home-form p{
+    line-height: 30px;
+}
+.course-buttons .add-cart{
+    background: #ff6498;
+}
+.fixed-add-cart.add-to-cart{
+    background: #ff6498;
+}
+.payment-button{
+    background: #ff6498;
+}
+.course_discount_content .add-cart{
+    background: #ff6498;
+}
+@media (max-width: 480px){
+    .home-section-wrap:before{
+        border-radius: 0 0 0 50px;
+        height: 358px;
+    }
+}
+.all-items.blue{
+    color: #ffffff;
+    background-color: #2edaf4;
+    border-color: #2edaf4;
+
+}
+.all-items.blue:hover{
+    color: #ffffff;
+    background-color: #1a43a8;
+    border-color: #1a43a8;
+}
+.how-train-bg .serv-item.dark-blue .icon{
+    background: #1a43a8;
+}
+
+.add-course .wrap a{width: 210px;}
+.add-course .wrap p{margin-top: 60px;color: #a3acb7; font-size: 15px;}
+.add-course .wrap .add-course-btn{margin-top: 0}
+@media (max-width: 480px){
+    .add-course .wrap p{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    .add-course .wrap a{
+        width: 180px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px){
+    .home-section-wrap.user-loggedin:before{
+        height: 550px;
+    }
+}
+.dropdown-menu-item.active{
+    z-index: 10;
+}
+
+.trainer-section-text .social-ul a{
+    background: #ffffff;
+}
+
+.search-form .seach-filters a{
+    width: auto;
+    padding: 0px 16px;
+}
+.user-login-menu{
+    width: 212px;
+}
+
+.course-item .course-img .add-fav{
+    padding-top: 2px;
+}
+
+.header-item > a.login:hover, .header-item > a.login.active{
+    background: #1a43a8 !important;
+}
+.modal-open .modal{
+    z-index: 99999;
+}
+
+
+
+.courses-tabs {
+    max-width: 780px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.courses-tabs-wrap{
+    white-space: nowrap;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+.scrollable-area-x .mCSB_container{
+    margin-bottom: 15px !important;
+}
+.courses-tabs .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #e1e1e1 !important;
+}
+
+.modal-open .modal{
+    z-index: 99999999;
+}
+.modal-backdrop{
+    z-index: 999;
+}
+body.menu-fixed{
+    padding-top: 100px;
+}
+
+.owl-stage-outer{
+    width: calc(100% + 30px);
+}

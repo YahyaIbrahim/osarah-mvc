@@ -11,57 +11,60 @@
     <meta name="robots" content="index,follow"/>
     <meta name="robots" content="ALL"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="منصة عصارة - المنصة الرائدة بالتعليم الإلكتروني"/>
-    <meta property="og:description" content="أكثر من 200 دورة تدريبية احترافية في مجالات متعددة مثل : المهارات الوظيفية ، البرمجة ، الكتابة ، إدارة المشاريع ، الإلقاء ، التفاوض والإٍقناع ، التصميم  وحتى لغة الإشارة ، طور مهاراتك وتعلم الآن من منصة عصارة"/>
-    <meta property="og:image" content="https://osarh.com/uploads/images/2022/03/UWFYz.jpg"/>
+    <meta property="og:title" th:content="#{meta.title}"/>
+    <meta property="og:description" th:content="#{meta.description}"/>
+    <meta property="og:image" th:href="@{/assets/images/UWFYz.jpg}"/>
     <meta property="og:image:width" content="1024"/>
     <meta property="og:image:height" content="576"/>
     <meta property="og:url" content="https://osarh.com"/>
-    <meta property="og:site_name" content="منصة عصارة"/>
+    <meta property="og:site_name" th:content="#{meta.site.name}"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:domain" content="https://osarh.com"/>
-    <meta name="twitter:site" content="https://osarh.com"/>
-    <meta name="twitter:creator" content="@AdelBahmim"/>
-    <meta name="twitter:image:src" content="https://osarh.com/uploads/images/2022/03/UWFYz.jpg"/>
-    <meta name="twitter:description" content="أكثر من 200 دورة تدريبية احترافية في مجالات متعددة مثل : المهارات الوظيفية ، البرمجة ، الكتابة ، إدارة المشاريع ، الإلقاء ، التفاوض والإٍقناع ، التصميم  وحتى لغة الإشارة ، طور مهاراتك وتعلم الآن من منصة عصارة"/>
-    <meta name="twitter:title" content="منصة عصارة - المنصة الرائدة بالتعليم الإلكتروني"/>
-    <meta name="twitter:url" content="https://osarh.com"/>
-    <meta name="description" content="أكثر من 200 دورة تدريبية احترافية في مجالات متعددة مثل : المهارات الوظيفية ، البرمجة ، الكتابة ، إدارة المشاريع ، الإلقاء ، التفاوض والإٍقناع ، التصميم  وحتى لغة الإشارة ، طور مهاراتك وتعلم الآن من منصة عصارة"/>
-    <meta name="keywords" content="دورات اونلاين ,دورات مجانية ,تعلم عن بعد ,دورات اونلاين مجانا ,دورات مجانية اون لاين بشهادات معتمدة ,دورات مجانية اون لاين بشهادات معتمدة 2021 ,دورات تدريبية  ,كورسات أونلاين,عصارة ,أكاديمية عصارة ,منصة عصارة,دورة أسهم ,دورة وظايف ,شهادات ,وظايف ,وظائف نسائية ,وظيفة ,مهارات ,تعلم مهارات جديدة,مهارات وظيفية ,فن التفاوض,كتب ,كتب الكترونية ,كيف اسوي مدونة ,منتجات رقمية,برمجة,تصميم,إدارة مشاريع,بايثون,عملات رقمية,الستة سيقما ,التفاوض والإقناع ,الإلقاء"/>
-    <meta name="author" content=""/>
+    <meta name="twitter:domain" th:content="#{twitter_domain}"/>
+    <meta name="twitter:site" th:content="#{twitter_site}"/>
+    <meta name="twitter:creator" th:content="#{twitter_creator}"/>
+    <meta name="twitter:image:src" th:href="@{/assets/images/UWFYz.jpg}"/>
+    <meta name="twitter:description" th:content="#{twitter.description}"/>
+    <meta name="twitter:title" th:content="#{twitter.title}"/>
+    <meta name="twitter:url" th:content="#{twitter.url}"/>
+    <meta name="description" th:content="#{meta.description}"/>
+    <meta name="keywords" th:content="#{meta.keywords}"/>
+    <meta name="author" th:content="#{meta.author}"/>
     <meta name="rating" content="General"/>
 
     <link rel="shortcut icon" href="/favicon.ico"/>
-    <link href="https://osarh.com/assets/css/bundle.css?_MTU2" rel="stylesheet" type="text/css">
-    <link href="https://osarh.com/assets/css/bundle/intlTelInput.css?_MTU2" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/assets/css/bootstrap.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/assets/css/intlTelInput.css}" rel="stylesheet" type="text/css">
 
-    <link href="https://osarh.com/assets/skins/all.css" rel="stylesheet"/>
+    <link th:href="@{/static/assets/skins/all.css}" rel="stylesheet"/>
 
 
 
 
     <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://osarh.com","name":"الرئيسية"}}]}]</script>
-    <link href="https://osarh.com/assets/css/style.css?_MTU2" rel="stylesheet" type="text/css">
-    <link href="https://osarh.com/assets/css/responsive.css?_MTU2" rel="stylesheet" type="text/css">
-    <link href="https://osarh.com/assets/css/helpers.css?_MTU2" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/assets/css/style.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/assets/css/responsive.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/assets/css/helpers.css}" rel="stylesheet" type="text/css">
     <meta name="format-detection" content="telephone=no">
-    <meta name="csrf-token" content="oRChyCnaU0fmTSDVBFhhF6O1yNBI5Q1weII8WNfm">
-    <script type="application/ld+json">
-        [{"@context":"https://schema.org","@type":"Organization","url":"https://osarh.com","logo":"https://osarh.com/assets/images/logo.svg"},{"@context":"https://schema.org","@type":"WebSite","name":"عادل باهميم","alternateName":"ADEL BAHMIM","url":"https://osarh.com"}]
-    </script>
-    <script>
-        var merchantIdentifier = 'merchant.osarh.com';
-        function isLocalStorageAvailable() {
-            var test = 'test';
-            try {
-                localStorage.setItem(test, test);
-                localStorage.removeItem(test);
-                return true;
-            } catch (e) {
-                return false;
-            }
-        }
-    </script>
+
+<!--    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}"/>-->
+<!--    <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}"/>-->
+
+<!--    <script type="application/ld+json">-->
+<!--        [{"@context":"https://schema.org","@type":"Organization","url":"https://osarh.com","logo":"https://osarh.com/assets/images/logo.svg"},{"@context":"https://schema.org","@type":"WebSite","name":"عادل باهميم","alternateName":"ADEL BAHMIM","url":"https://osarh.com"}]-->
+<!--    </script>-->
+<!--    <script>-->
+<!--        var merchantIdentifier = 'merchant.osarh.com';-->
+<!--        function isLocalStorageAvailable() {-->
+<!--            var test = 'test';-->
+<!--            try {-->
+<!--                localStorage.setItem(test, test);-->
+<!--                localStorage.removeItem(test);-->
+<!--                return true;-->
+<!--            } catch (e) {-->
+<!--                return false;-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -97,7 +100,7 @@
 
         gtag('config', 'AW-644622597');
     </script>
-</head><body data-hint-version="186" class=" hide_search">
+</head><body data-hint-version="186" class="hide_search">
 <div class="page_loader"><img src="https://osarh.com/assets/images/loader.gif"/></div>
 <div class="toast_messages" style="width: auto;"></div>
 <script>
@@ -125,7 +128,9 @@
                 <li class="drop-item">
                     <a href="javascript:;" class="">
                         الدورات الالكترونية
-                        <svg xmlns="//www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                        <svg width="6" height="10" viewBox="0 0 6 10"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="//www.w3.org/2000/svg ">
                             <path id="Shape"
                                   d="M1.811,5,5.78,8.781a.69.69,0,0,1,0,1.01.777.777,0,0,1-1.061,0L.22,5.505a.69.69,0,0,1,0-1.01L4.72.209a.777.777,0,0,1,1.061,0,.69.69,0,0,1,0,1.01Z"
                                   transform="translate(0 0)"/>
@@ -155,8 +160,9 @@
     </div>
     <div class="mobile-icons">
         <a href="javascript:;" class="mobile-menu-close">
-            <svg id="Combined_Shape" data-name="Combined Shape" xmlns="//www.w3.org/2000/svg" width="10"
-                 height="10" viewBox="0 0 10 10">
+            <svg id="Combined_Shape" data-name="Combined Shape" width="10"
+                 height="10" viewBox="0 0 10 10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="//www.w3.org/2000/svg ">
                 <path id="Combined_Shape-2" data-name="Combined Shape"
                       d="M8.781,9.79,5,6.01,1.219,9.79A.714.714,0,0,1,.209,8.781L3.99,5,.209,1.219A.715.715,0,0,1,1.219.209L5,3.99,8.781.209A.714.714,0,0,1,9.79,1.219L6.01,5,9.79,8.781a.714.714,0,1,1-1.01,1.01Z"
                       fill="#fff"/>
@@ -166,7 +172,9 @@
             <div class="mobile-menu-icons">
                 <div class="header-item">
                     <a href="https://osarh.com/user/cart" class="header-icon cart">
-                        <svg xmlns="//www.w3.org/2000/svg" width="22" height="20.164" viewBox="0 0 22 20.164">
+                        <svg width="22" height="20.164" viewBox="0 0 22 20.164"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="//www.w3.org/2000/svg ">
                             <path id="shopping-cart"
                                   d="M21.1,25.009H3.895l-.256-2.848a.9.9,0,0,0-.9-.823H.9a.9.9,0,1,0,0,1.807h1.01L2.952,34.722a3.476,3.476,0,0,0,1.3,2.355,2.738,2.738,0,1,0,4.733.753h4.945a2.739,2.739,0,1,0,2.576-1.807H6.417a1.678,1.678,0,0,1-1.543-1.017l14.439-.849a.9.9,0,0,0,.824-.683l1.836-7.343A.9.9,0,0,0,21.1,25.009ZM6.411,39.695a.932.932,0,1,1,.932-.932A.933.933,0,0,1,6.411,39.695Zm10.1,0a.932.932,0,1,1,.932-.932A.933.933,0,0,1,16.507,39.695Zm2.038-7.3L4.631,33.21l-.574-6.394H19.939Z"
                                   transform="translate(0 -21.338)"/>
@@ -8520,7 +8528,6 @@
                 <div>
 
                     <div style="float: right;margin-top: 34px;">
-                        <a
                         <a href="https://osarh.com/assets/tax_cert.pdf" download="شهادة ضريبة القيمة المضافة.PDF"><img
                                 src="https://osarh.com/front/vat-certificate.svg" style="height: 40px" alt=""></a>
                     </div>
