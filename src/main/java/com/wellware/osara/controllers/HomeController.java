@@ -12,15 +12,7 @@ import java.io.UnsupportedEncodingException;
 
 @Controller
 @Slf4j
-@PropertySource("classpath:base.properties")
 public class HomeController {
-    private final Environment environment;
-
-    @Autowired
-    public HomeController(Environment environment) {
-        this.environment = environment;
-    }
-
 
 
     @RequestMapping("/")

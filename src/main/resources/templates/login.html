@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html  th:with="lang=${#locale.getLanguage()},dir=${#locale.getLanguage()=='ar'?'rtl':'ltr'},arabic=${#locale.getLanguage()=='ar'}"
+       th:lang="${lang}"
+       th:dir="${dir}" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template :: common-header" />
+
+<body data-hint-version="187" class=" ">
+
+
+<div class="single-form-page-wrap d-flex justify-content-center align-items-center">
+    <div class="form-wrapper-centered wow fadeIn">
+        <div class="form-wrapper-block">
+            <div class="form-wrap wizard-wrap">
+                <div class="form-logo-wrap">
+                    <a href="https://osarh.com" class="form-logo"><img src="https://osarh.com/assets/images/colored-logo.svg"
+                                                                       width="110"/></a>
+                    <a href="https://osarh.com/user/register" class="action">إنشاء حساب</a>
+                </div>
+                <h2 class="form-title">
+                    <span>تسجيل دخول</span>
+                    <div class="social-login">
+                        <a href="https://osarh.com/auth/apple">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Component_13_1" data-name="Component 13 – 1"
+                                 width="19.4" height="22.712" viewBox="0 0 19.4 22.712">
+                                <path id="Path_760" data-name="Path 760"
+                                      d="M56.079,122.115a5.772,5.772,0,0,0-4.339-2.275c-2.037,0-2.9.963-4.314.963-1.459,0-2.568-.96-4.329-.96a5.9,5.9,0,0,0-4.741,2.83c-1.642,2.514-1.361,7.241,1.3,11.268.952,1.441,2.224,3.061,3.888,3.075,1.481.014,1.9-.938,3.9-.947s2.386.96,3.864.945c1.665-.013,3.007-1.808,3.959-3.249a16.09,16.09,0,0,0,1.466-2.719A4.918,4.918,0,0,1,56.079,122.115Z"
+                                      transform="translate(-37.336 -114.303)"/>
+                                <path id="Path_759" data-name="Path 759"
+                                      d="M252.348,0a5.551,5.551,0,0,0-3.594,1.946,4.822,4.822,0,0,0-1.177,3.747A4.685,4.685,0,0,0,251.2,3.84,5.2,5.2,0,0,0,252.348,0Z"
+                                      transform="translate(-238.321)"/>
+                            </svg>
+                        </a>
+                        <a href="https://osarh.com/auth/google">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Component_14_1" data-name="Component 14 – 1"
+                                 width="24" height="24" viewBox="0 0 24 24">
+                                <path id="Path_761" data-name="Path 761"
+                                      d="M5.319,146.29l-.835,3.119-3.053.065a12.021,12.021,0,0,1-.088-11.205h0l2.718.5,1.191,2.7a7.162,7.162,0,0,0,.067,4.822Z"
+                                      transform="translate(0 -131.787)"/>
+                                <path id="Path_762" data-name="Path 762"
+                                      d="M273.155,208.176a12,12,0,0,1-4.278,11.6h0l-3.424-.175-.485-3.025a7.152,7.152,0,0,0,3.077-3.652h-6.417v-4.747h11.527Z"
+                                      transform="translate(-249.364 -198.418)"/>
+                                <path id="Path_763" data-name="Path 763"
+                                      d="M48.591,316.263h0a12,12,0,0,1-18.082-3.671l3.889-3.183a7.137,7.137,0,0,0,10.284,3.654Z"
+                                      transform="translate(-29.079 -294.905)"/>
+                                <path id="Path_764" data-name="Path 764"
+                                      d="M46.942,2.763,43.054,5.945a7.136,7.136,0,0,0-10.52,3.736l-3.909-3.2h0A12,12,0,0,1,46.942,2.763Z"
+                                      transform="translate(-27.282)"/>
+                            </svg>
+                        </a>
+                    </div>
+                </h2>
+                <form class="inner-page-form join-form ajax validate" method="post" action="https://osarh.com/user/login">
+                    <div class="form-group">
+                        <svg xmlns="//www.w3.org/2000/svg" width="16" height="13.091" viewBox="0 0 16 13.091">
+                            <path id="Combined_Shape" data-name="Combined Shape"
+                                  d="M2.182,13.091A2.184,2.184,0,0,1,0,10.909V2.189c0-.007,0-.014,0-.021A2.184,2.184,0,0,1,2.182,0H13.818A2.184,2.184,0,0,1,16,2.182v8.727a2.184,2.184,0,0,1-2.182,2.182Zm-.727-2.182a.728.728,0,0,0,.727.727H13.818a.728.728,0,0,0,.727-.727V3.579L8.417,7.868a.726.726,0,0,1-.834,0L1.454,3.579ZM8,6.385l6.469-4.528a.728.728,0,0,0-.651-.4H2.182a.728.728,0,0,0-.651.4Z"
+                                  transform="translate(0)"/>
+                        </svg>
+                        <input type="email" name="email" id="email" placeholder="البريد الإلكتروني" required/>
+                    </div>
+                    <div class="form-group password-input">
+                        <svg xmlns="//www.w3.org/2000/svg" width="16" height="17.6" viewBox="0 0 16 17.6">
+                            <path id="Combined_Shape" data-name="Combined Shape"
+                                  d="M2.4,17.6A2.4,2.4,0,0,1,0,15.2V9.6A2.4,2.4,0,0,1,2.4,7.2h.8V4.8a4.8,4.8,0,1,1,9.6,0V7.2h.8A2.4,2.4,0,0,1,16,9.6v5.6a2.4,2.4,0,0,1-2.4,2.4Zm-.8-8v5.6a.8.8,0,0,0,.8.8H13.6a.8.8,0,0,0,.8-.8V9.6a.8.8,0,0,0-.8-.8H2.4A.8.8,0,0,0,1.6,9.6Zm9.6-2.4V4.8a3.2,3.2,0,0,0-6.4,0V7.2Z"/>
+                        </svg>
+                        <input type="password" name="password" id="password" placeholder="كلمة المرور" required/>
+                        <a href="#" class="show-pass">
+                            <svg id="Combined_Shape" data-name="Combined Shape" xmlns="//www.w3.org/2000/svg"
+                                 width="16" height="12.001" viewBox="0 0 16 12.001">
+                                <path id="Combined_Shape-2" data-name="Combined Shape"
+                                      d="M8,12A8.036,8.036,0,0,1,2.1,9.123,13.694,13.694,0,0,1,.6,7.2,10,10,0,0,1,.07,6.3a.672.672,0,0,1,0-.6,10,10,0,0,1,.526-.9A13.694,13.694,0,0,1,2.1,2.878,8.036,8.036,0,0,1,8,0a8.038,8.038,0,0,1,5.9,2.878,13.694,13.694,0,0,1,1.5,1.927,10,10,0,0,1,.526.9.668.668,0,0,1,0,.6,10,10,0,0,1-.526.9,13.694,13.694,0,0,1-1.5,1.927A8.038,8.038,0,0,1,8,12ZM8,1.333a6.766,6.766,0,0,0-4.93,2.456A12.358,12.358,0,0,0,1.716,5.529c-.108.167-.2.326-.289.472.081.142.178.3.289.472A12.358,12.358,0,0,0,3.069,8.211,6.766,6.766,0,0,0,8,10.667a6.766,6.766,0,0,0,4.931-2.456,12.29,12.29,0,0,0,1.353-1.739c.107-.166.2-.325.289-.472-.086-.148-.183-.307-.289-.472a12.29,12.29,0,0,0-1.353-1.739A6.766,6.766,0,0,0,8,1.333ZM8,8.667A2.667,2.667,0,1,1,10.667,6,2.67,2.67,0,0,1,8,8.667Zm0-4A1.333,1.333,0,1,0,9.334,6,1.335,1.335,0,0,0,8,4.667Z"
+                                      transform="translate(0)"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="form-group forget-pass">
+                        <a href="https://osarh.com/user/password/reset">نسيت كلمة المرور ؟</a>
+                    </div>
+                    <div class="form-footer">
+                        <div class="other-action">
+                            <a href="https://osarh.com/user/register">إنشاء حساب</a>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="button submit-button">دخول</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form-quick-links">
+            <a href="https://osarh.com/user/register" class="important">إنشاء حساب</a>
+            <a href="https://osarh.com/trainers/register" class="important">قدم شغفك في عصارة</a>
+            <a href="https://osarh.com/policy">الشروط والأحكام</a>
+        </div>
+    </div>
+</div>
+<div class="modal-item modal fade" id="register-login" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <span type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+                <svg id="Combined_Shape" data-name="Combined Shape" xmlns="//www.w3.org/2000/svg" width="12"
+                     height="12" viewBox="0 0 12 12">
+                  <path id="Combined_Shape-2" data-name="Combined Shape"
+                        d="M10.537,11.749,6,7.212,1.463,11.749A.857.857,0,0,1,.251,10.537L4.787,6,.251,1.463A.857.857,0,0,1,1.463.251L6,4.787,10.537.251a.857.857,0,0,1,1.212,1.213L7.212,6l4.537,4.537a.857.857,0,1,1-1.212,1.212Z"
+                        fill="#fff"/>
+                </svg>
+            </span>
+            <div class="modal-content-wrap">
+                <div class="form-wrap wizard-wrap login-section">
+                    <div class="form-logo-wrap">
+                        <a href="https://osarh.com" class="form-logo"><img
+                                src="https://osarh.com/assets/images/colored-logo.svg"
+                                width="110"/></a>
+                        <a href="javascript:;" class="action register-action">إنشاء حساب</a>
+                    </div>
+                    <h2 class="form-title">
+                        <span>تسجيل دخول</span>
+                        <div class="social-login">
+                            <a href="https://osarh.com/auth/apple">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Component_13_1"
+                                     data-name="Component 13 – 1"
+                                     width="19.4" height="22.712" viewBox="0 0 19.4 22.712">
+                                    <path id="Path_760" data-name="Path 760"
+                                          d="M56.079,122.115a5.772,5.772,0,0,0-4.339-2.275c-2.037,0-2.9.963-4.314.963-1.459,0-2.568-.96-4.329-.96a5.9,5.9,0,0,0-4.741,2.83c-1.642,2.514-1.361,7.241,1.3,11.268.952,1.441,2.224,3.061,3.888,3.075,1.481.014,1.9-.938,3.9-.947s2.386.96,3.864.945c1.665-.013,3.007-1.808,3.959-3.249a16.09,16.09,0,0,0,1.466-2.719A4.918,4.918,0,0,1,56.079,122.115Z"
+                                          transform="translate(-37.336 -114.303)"/>
+                                    <path id="Path_759" data-name="Path 759"
+                                          d="M252.348,0a5.551,5.551,0,0,0-3.594,1.946,4.822,4.822,0,0,0-1.177,3.747A4.685,4.685,0,0,0,251.2,3.84,5.2,5.2,0,0,0,252.348,0Z"
+                                          transform="translate(-238.321)"/>
+                                </svg>
+                            </a>
+                            <a href="https://osarh.com/auth/google">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Component_14_1"
+                                     data-name="Component 14 – 1"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <path id="Path_761" data-name="Path 761"
+                                          d="M5.319,146.29l-.835,3.119-3.053.065a12.021,12.021,0,0,1-.088-11.205h0l2.718.5,1.191,2.7a7.162,7.162,0,0,0,.067,4.822Z"
+                                          transform="translate(0 -131.787)"/>
+                                    <path id="Path_762" data-name="Path 762"
+                                          d="M273.155,208.176a12,12,0,0,1-4.278,11.6h0l-3.424-.175-.485-3.025a7.152,7.152,0,0,0,3.077-3.652h-6.417v-4.747h11.527Z"
+                                          transform="translate(-249.364 -198.418)"/>
+                                    <path id="Path_763" data-name="Path 763"
+                                          d="M48.591,316.263h0a12,12,0,0,1-18.082-3.671l3.889-3.183a7.137,7.137,0,0,0,10.284,3.654Z"
+                                          transform="translate(-29.079 -294.905)"/>
+                                    <path id="Path_764" data-name="Path 764"
+                                          d="M46.942,2.763,43.054,5.945a7.136,7.136,0,0,0-10.52,3.736l-3.909-3.2h0A12,12,0,0,1,46.942,2.763Z"
+                                          transform="translate(-27.282)"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </h2>
+                    <form class="inner-page-form join-form ajax validate" method="post"
+                          data-route="login"
+                          after-submit="afterLogin"
+                          action="https://osarh.com/user/login">
+                        <input type="hidden" name="_token" value="oRChyCnaU0fmTSDVBFhhF6O1yNBI5Q1weII8WNfm">                            <div class="form-group">
+                        <svg xmlns="//www.w3.org/2000/svg" width="16" height="13.091" viewBox="0 0 16 13.091">
+                            <path id="Combined_Shape" data-name="Combined Shape"
+                                  d="M2.182,13.091A2.184,2.184,0,0,1,0,10.909V2.189c0-.007,0-.014,0-.021A2.184,2.184,0,0,1,2.182,0H13.818A2.184,2.184,0,0,1,16,2.182v8.727a2.184,2.184,0,0,1-2.182,2.182Zm-.727-2.182a.728.728,0,0,0,.727.727H13.818a.728.728,0,0,0,.727-.727V3.579L8.417,7.868a.726.726,0,0,1-.834,0L1.454,3.579ZM8,6.385l6.469-4.528a.728.728,0,0,0-.651-.4H2.182a.728.728,0,0,0-.651.4Z"
+                                  transform="translate(0)"/>
+                        </svg>
+                        <input type="email" name="email" placeholder="البريد الإلكتروني" required/>
+                    </div>
+                        <div class="form-group password-input">
+                            <svg xmlns="//www.w3.org/2000/svg" width="16" height="17.6" viewBox="0 0 16 17.6">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M2.4,17.6A2.4,2.4,0,0,1,0,15.2V9.6A2.4,2.4,0,0,1,2.4,7.2h.8V4.8a4.8,4.8,0,1,1,9.6,0V7.2h.8A2.4,2.4,0,0,1,16,9.6v5.6a2.4,2.4,0,0,1-2.4,2.4Zm-.8-8v5.6a.8.8,0,0,0,.8.8H13.6a.8.8,0,0,0,.8-.8V9.6a.8.8,0,0,0-.8-.8H2.4A.8.8,0,0,0,1.6,9.6Zm9.6-2.4V4.8a3.2,3.2,0,0,0-6.4,0V7.2Z"/>
+                            </svg>
+                            <input type="password" name="password" placeholder="كلمة المرور" required/>
+                            <a href="javascript:;" class="show-pass">
+                                <svg id="Combined_Shape" data-name="Combined Shape" xmlns="//www.w3.org/2000/svg"
+                                     width="16" height="12.001" viewBox="0 0 16 12.001">
+                                    <path id="Combined_Shape-2" data-name="Combined Shape"
+                                          d="M8,12A8.036,8.036,0,0,1,2.1,9.123,13.694,13.694,0,0,1,.6,7.2,10,10,0,0,1,.07,6.3a.672.672,0,0,1,0-.6,10,10,0,0,1,.526-.9A13.694,13.694,0,0,1,2.1,2.878,8.036,8.036,0,0,1,8,0a8.038,8.038,0,0,1,5.9,2.878,13.694,13.694,0,0,1,1.5,1.927,10,10,0,0,1,.526.9.668.668,0,0,1,0,.6,10,10,0,0,1-.526.9,13.694,13.694,0,0,1-1.5,1.927A8.038,8.038,0,0,1,8,12ZM8,1.333a6.766,6.766,0,0,0-4.93,2.456A12.358,12.358,0,0,0,1.716,5.529c-.108.167-.2.326-.289.472.081.142.178.3.289.472A12.358,12.358,0,0,0,3.069,8.211,6.766,6.766,0,0,0,8,10.667a6.766,6.766,0,0,0,4.931-2.456,12.29,12.29,0,0,0,1.353-1.739c.107-.166.2-.325.289-.472-.086-.148-.183-.307-.289-.472a12.29,12.29,0,0,0-1.353-1.739A6.766,6.766,0,0,0,8,1.333ZM8,8.667A2.667,2.667,0,1,1,10.667,6,2.67,2.67,0,0,1,8,8.667Zm0-4A1.333,1.333,0,1,0,9.334,6,1.335,1.335,0,0,0,8,4.667Z"
+                                          transform="translate(0)"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="form-group forget-pass">
+                            <a href="https://osarh.com/user/password/reset">نسيت كلمة المرور ؟</a>
+                        </div>
+                        <div class="form-footer">
+                            <div class="other-action">
+                                <a href="javascript:;" class="action register-action">إنشاء حساب</a>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="button submit-button">دخول</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-wrap wizard-wrap register-section" style="display: none;">
+                    <div class="form-logo-wrap">
+                        <a href="https://osarh.com" class="form-logo"><img
+                                src="https://osarh.com/assets/images/colored-logo.svg"
+                                width="110"/></a>
+                        <a href="javascript:;" class="action login-action">دخول</a>
+                    </div>
+                    <h2 class="form-title">إنشاء حساب</h2>
+                    <form class="inner-page-form join-form validate ajax" method="post"
+                          action="https://osarh.com/user/register">
+                        <input type="hidden" name="_token" value="oRChyCnaU0fmTSDVBFhhF6O1yNBI5Q1weII8WNfm">                            <input type="hidden" name="_recaptcha" id="_recaptcha">
+                        <input type="hidden" name="countryCode" id="countryCode" value="SA">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <svg xmlns="//www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                                        <path id="Combined_Shape" data-name="Combined Shape"
+                                              d="M17,20a1,1,0,0,1-1-1V17a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V17a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,17,20ZM9,10a5,5,0,1,1,5-5A5.006,5.006,0,0,1,9,10ZM9,2a3,3,0,1,0,3,3A3,3,0,0,0,9,2Z"
+                                              transform="translate(0 0)"/>
+                                    </svg>
+                                    <input type="text" name="first_name" id="first_name" placeholder="الاسم الاول"/>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <svg xmlns="//www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                                        <path id="Combined_Shape" data-name="Combined Shape"
+                                              d="M17,20a1,1,0,0,1-1-1V17a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V17a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,17,20ZM9,10a5,5,0,1,1,5-5A5.006,5.006,0,0,1,9,10ZM9,2a3,3,0,1,0,3,3A3,3,0,0,0,9,2Z"
+                                              transform="translate(0 0)"/>
+                                    </svg>
+                                    <input type="text" name="last_name" id="last_name" placeholder="الاسم الأخير"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <svg xmlns="//www.w3.org/2000/svg" width="16" height="13.091" viewBox="0 0 16 13.091">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M2.182,13.091A2.184,2.184,0,0,1,0,10.909V2.189c0-.007,0-.014,0-.021A2.184,2.184,0,0,1,2.182,0H13.818A2.184,2.184,0,0,1,16,2.182v8.727a2.184,2.184,0,0,1-2.182,2.182Zm-.727-2.182a.728.728,0,0,0,.727.727H13.818a.728.728,0,0,0,.727-.727V3.579L8.417,7.868a.726.726,0,0,1-.834,0L1.454,3.579ZM8,6.385l6.469-4.528a.728.728,0,0,0-.651-.4H2.182a.728.728,0,0,0-.651.4Z"
+                                      transform="translate(0)"/>
+                            </svg>
+                            <input type="email" name="email" placeholder="البريد الإلكتروني"/>
+                        </div>
+                        <div class="form-group">
+                            <svg id="Component_64_1" data-name="Component 64 – 1" xmlns="//www.w3.org/2000/svg"
+                                 width="16"
+                                 height="22" viewBox="0 0 16 22">
+                                <path id="Rectangle-path"
+                                      d="M13,22H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0H13a3,3,0,0,1,3,3V19A3,3,0,0,1,13,22ZM3,2A1,1,0,0,0,2,3V19a1,1,0,0,0,1,1H13a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1Z"
+                                      transform="translate(0 0)"/>
+                                <path id="Shape" d="M1,2H7A1,1,0,0,0,7,0H1A1,1,0,0,0,1,2Z"
+                                      transform="translate(4 16)"/>
+                            </svg>
+                            <input type="text" name="mobile" id="mobile" style="direction: ltr"/>
+                            <svg class="mobile-arrow" xmlns="//www.w3.org/2000/svg" width="10" height="5.714"
+                                 viewBox="0 0 10 5.714">
+                                <path id="Shape"
+                                      d="M5,3.99,1.219.209a.714.714,0,0,0-1.01,1.01L4.495,5.505a.714.714,0,0,0,1.01,0L9.791,1.219A.714.714,0,0,0,8.781.209Z"
+                                      transform="translate(0 0)"/>
+                            </svg>
+                        </div>
+                        <div class="form-group password-input">
+                            <svg xmlns="//www.w3.org/2000/svg" width="16" height="17.6" viewBox="0 0 16 17.6">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M2.4,17.6A2.4,2.4,0,0,1,0,15.2V9.6A2.4,2.4,0,0,1,2.4,7.2h.8V4.8a4.8,4.8,0,1,1,9.6,0V7.2h.8A2.4,2.4,0,0,1,16,9.6v5.6a2.4,2.4,0,0,1-2.4,2.4Zm-.8-8v5.6a.8.8,0,0,0,.8.8H13.6a.8.8,0,0,0,.8-.8V9.6a.8.8,0,0,0-.8-.8H2.4A.8.8,0,0,0,1.6,9.6Zm9.6-2.4V4.8a3.2,3.2,0,0,0-6.4,0V7.2Z"/>
+                            </svg>
+                            <input type="password" name="password" placeholder="كلمة المرور"/>
+                            <a href="javascript:;" class="show-pass">
+                                <svg id="Combined_Shape" data-name="Combined Shape" xmlns="//www.w3.org/2000/svg"
+                                     width="16"
+                                     height="12.001" viewBox="0 0 16 12.001">
+                                    <path id="Combined_Shape-2" data-name="Combined Shape"
+                                          d="M8,12A8.036,8.036,0,0,1,2.1,9.123,13.694,13.694,0,0,1,.6,7.2,10,10,0,0,1,.07,6.3a.672.672,0,0,1,0-.6,10,10,0,0,1,.526-.9A13.694,13.694,0,0,1,2.1,2.878,8.036,8.036,0,0,1,8,0a8.038,8.038,0,0,1,5.9,2.878,13.694,13.694,0,0,1,1.5,1.927,10,10,0,0,1,.526.9.668.668,0,0,1,0,.6,10,10,0,0,1-.526.9,13.694,13.694,0,0,1-1.5,1.927A8.038,8.038,0,0,1,8,12ZM8,1.333a6.766,6.766,0,0,0-4.93,2.456A12.358,12.358,0,0,0,1.716,5.529c-.108.167-.2.326-.289.472.081.142.178.3.289.472A12.358,12.358,0,0,0,3.069,8.211,6.766,6.766,0,0,0,8,10.667a6.766,6.766,0,0,0,4.931-2.456,12.29,12.29,0,0,0,1.353-1.739c.107-.166.2-.325.289-.472-.086-.148-.183-.307-.289-.472a12.29,12.29,0,0,0-1.353-1.739A6.766,6.766,0,0,0,8,1.333ZM8,8.667A2.667,2.667,0,1,1,10.667,6,2.67,2.67,0,0,1,8,8.667Zm0-4A1.333,1.333,0,1,0,9.334,6,1.335,1.335,0,0,0,8,4.667Z"
+                                          transform="translate(0)"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="checkbox-item checkbox-toggle">
+                            <input type="checkbox" name="deaf" id="deaf" style="display: none;"/>
+                            <label for="deaf">
+                                <div class="toggle-item">
+                                    <div class="toggle-circle">
+                                        <svg class="no" id="Combined_Shape" data-name="Combined Shape"
+                                             xmlns="//www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+                                            <path id="Combined_Shape-2" data-name="Combined Shape"
+                                                  d="M7.9,8.811l-3.4-3.4-3.4,3.4A.643.643,0,0,1,.188,7.9l3.4-3.4L.188,1.1A.643.643,0,0,1,1.1.188l3.4,3.4L7.9.188a.643.643,0,0,1,.909.91l-3.4,3.4,3.4,3.4a.643.643,0,1,1-.909.909Z"
+                                                  fill="#1a43a8"/>
+                                        </svg>
+                                        <svg class="yes" xmlns="//www.w3.org/2000/svg" width="12.609" height="9.107"
+                                             viewBox="0 0 12.609 9.107">
+                                            <path id="Shape"
+                                                  d="M1.2,4.408A.7.7,0,0,0,.205,5.4l3.5,3.5a.7.7,0,0,0,.991,0L12.4,1.2a.7.7,0,0,0-.991-.991L7.145,4.474,4.2,7.416Z"
+                                                  fill="#1a43a8"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span>هل أنت من اصحاب الهمم (الصم)</span>
+                                <svg class="deaf-icon" xmlns="//www.w3.org/2000/svg" width="20.342" height="24"
+                                     viewBox="0 0 20.342 24">
+                                    <g id="ear" transform="translate(-0.363 0)">
+                                        <path id="Path_794" data-name="Path 794"
+                                              d="M70.5,7.6C69.954,4.258,67.066.429,63.636.047a7.852,7.852,0,0,0-6.067,1.918A7.725,7.725,0,0,0,54.98,7.725a.817.817,0,0,0,1.634,0,6.121,6.121,0,0,1,6.839-6.061c2.577.287,4.992,3.5,5.431,6.192.41,2.517-.78,3.774-2.974,5.1a.813.813,0,0,0-.382.837l.235,1.331A4.941,4.941,0,0,1,64.008,19.8l-.228.186A5,5,0,0,1,60.638,21.1a1.909,1.909,0,0,1-1.648-.948l-1.441-2.487a.816.816,0,0,0-1.416.812l1.441,2.487a3.548,3.548,0,0,0,3.064,1.763,6.643,6.643,0,0,0,4.177-1.482l.228-.186a6.566,6.566,0,0,0,2.33-6.224l-.14-.792C69.319,12.707,71.043,10.94,70.5,7.6Zm0,0"
+                                              transform="translate(-51.438)" fill="#fff"/>
+                                        <path id="Path_795" data-name="Path 795"
+                                              d="M117.508,60.654a.816.816,0,0,0,1.034-.517,3.819,3.819,0,0,0-.565-3.519,5.041,5.041,0,0,0-3.888-2.052,4.5,4.5,0,0,0-4.5,4.5V65.6a.817.817,0,0,0,1.634,0V63.148h.817A2.452,2.452,0,0,1,113,67.859a.817.817,0,1,0,.637,1.505,4.087,4.087,0,0,0-1.59-7.851h-.817V59.062a2.864,2.864,0,0,1,2.861-2.861,3.381,3.381,0,0,1,2.561,1.373,2.209,2.209,0,0,1,.342,2.046.817.817,0,0,0,.517,1.034Zm0,0"
+                                              transform="translate(-102.745 -51.3)" fill="#fff"/>
+                                        <path id="Path_796" data-name="Path 796"
+                                              d="M1.177,30.373a.813.813,0,0,1-.62-1.341L19.271,7.065a.814.814,0,0,1,1.24,1.055L1.8,30.087a.812.812,0,0,1-.62.286Zm0,0"
+                                              transform="translate(0 -6.373)" fill="#fff"/>
+                                    </g>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form-footer">
+                            <div class="other-action">
+                                <a href="javascript:;" class="login-action">تسجيل دخول</a>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="button submit-button">تسجيل</button>
+                            </div>
+                        </div>
+                        <div class="form-condition">بالتسجيل ، أنت توافق على
+                            <a href="https://osarh.com/policy">شروط وأحكام الإستخدام وسياسة الخصوصية</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="https://osarh.com/assets/js/bundle.js?_MTU2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ar-ma.min.js"
+        integrity="sha512-Glvs0pb0gOuRsm8G8sq/d9lMck/y2StUfKAHVWj024Br8JZU/bGDKJQ/OBWruV4HwK/9lpyHug/v8tr7SkGWoQ=="
+        crossorigin="anonymous"></script>
+<script>
+    window.onerror = function myErrorHandler(message, source, lineno, colno, error) {
+        $.post('register-javascript', {
+            errorMsg: message,
+            url: source,
+            lineNumber: lineno,
+            colno: colno,
+            error: error.stack
+        })
+    }
+</script>
+<script type="text/javascript" src="https://osarh.com/assets/js/script.js?_MTU2"></script>
+<script type="text/javascript" src="https://osarh.com/assets/js/track.js"></script>
+<script>
+    var site_url = 'https://osarh.com';
+    if ($('#completeUserName').length) {
+        $('#completeUserName').modal('show')
+    }
+
+    function afterLogin($form) {
+        $('#register-login').modal('hide');
+        if ($form.data('route'))
+            window.location.href = 'https://osarh.com/payment';
+        else
+            window.location.href = 'https://osarh.com/user/profile';
+    }
+
+    $('#countryCode').change(function () {
+        if ($(this).val() == 'SA') {
+            $('#national_id-div').show();
+        } else {
+            $('#national_id-div').hide();
+
+        }
+    }).change()
+
+</script>
+<script type="text/javascript" src="https://osarh.com/assets/js/localstorage.js"></script>
+
+
+
+
+
+<a href="javascript:;" class="help-toggle " id="help-toggle">
+    <svg class="open" xmlns="http://www.w3.org/2000/svg" width="22" height="12.704" viewBox="0 0 22 12.704">
+        <path id="Path_1375" data-name="Path 1375"
+              d="M31.565,50.375,36.9,51.9v3.638a.734.734,0,0,0,.405.656l3.244,1.622a4.008,4.008,0,0,1,.978.688.733.733,0,0,0,1.014,0,4.008,4.008,0,0,1,.978-.688l3.244-1.622a.733.733,0,0,0,.405-.656V51.9l1.467-.419V57A.733.733,0,1,0,50.1,57V51.061l2.4-.686a.734.734,0,0,0,0-1.41L42.237,46.031a.733.733,0,0,0-.4,0L31.565,48.965a.734.734,0,0,0,0,1.41ZM45.7,55.084,42.864,56.5a5.475,5.475,0,0,0-.829.511,5.48,5.48,0,0,0-.829-.511l-2.838-1.419V52.319l3.466.99a.733.733,0,0,0,.4,0l3.466-.99ZM42.035,47.5l7.6,2.171-7.6,2.171-7.6-2.171Z"
+              transform="translate(-31.035 -46.003)" fill="#fff"/>
+    </svg>
+    <svg class="cancel" xmlns="http://www.w3.org/2000/svg" id="Combined_Shape" data-name="Combined Shape"
+         width="16"
+         height="16" viewBox="0 0 16 16">
+        <path id="Combined_Shape-2" data-name="Combined Shape"
+              d="M7,15V9H1A1,1,0,1,1,1,7H7V1A1,1,0,1,1,9,1V7h6a1,1,0,0,1,0,2H9v6a1,1,0,0,1-2,0Z" fill="#fff"/>
+    </svg>
+</a>
+<div class="help-wrapper">
+    <div class="help-items">
+        <div class="help-item active">
+            <div class="media">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/5bfe2WuepQE?rel=0"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="text">
+                <h3>كيف انشئ حساب في أكاديمية عٌصارة</h3>
+                <p>خطوات انشاء الحساب</p>
+            </div>
+        </div>
+    </div>
+    <div class="help-actions">
+    </div>
+</div>
+<a href="https://api.whatsapp.com/send?phone=+966560539833&text=منصة عصارة, الريادة بالتعليم الإلكتروني"
+   class="float " target="_blank">
+    <img src="https://osarh.com/assets/images/whatsapp.svg">
+</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2NBG64"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Hotjar Tracking Code for https://osarh.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3098489,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script type="text/javascript" id="pap_x2s6df8d"
+        src="https://www.linkaraby.com/scripts/2xjh8l8dq0"></script>
+<script type="text/javascript">
+    PostAffTracker.setAccountId('135e2e90');
+    try {
+        PostAffTracker.track();
+    } catch (err) {
+    }
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '772050656869198');
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=772050656869198&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+<script>setTimeout(function () {
+    $('.page_loader').fadeOut();
+}, 1000);</script>
+
+
+</body>

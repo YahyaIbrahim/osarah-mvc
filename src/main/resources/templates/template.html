@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html  th:with="lang=${#locale.getLanguage()},dir=${#locale.getLanguage()=='ar'?'rtl':'ltr'},arabic=${#locale.getLanguage()=='ar'}"
+       th:lang="${lang}"
+       th:dir="${dir}" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common-header">
+    <title th:text="#{system.title}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="robots" content="ALL"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" th:content="#{meta.title}"/>
+    <meta property="og:description" th:content="#{meta.description}"/>
+    <meta property="og:image" th:href="@{/assets/images/UWFYz.jpg}"/>
+    <meta property="og:image:width" content="1024"/>
+    <meta property="og:image:height" content="576"/>
+    <meta property="og:url" content="https://osarh.com"/>
+    <meta property="og:site_name" th:content="#{meta.site.name}"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:domain" th:content="#{twitter_domain}"/>
+    <meta name="twitter:site" th:content="#{twitter_site}"/>
+    <meta name="twitter:creator" th:content="#{twitter_creator}"/>
+    <meta name="twitter:image:src" th:href="@{/assets/images/UWFYz.jpg}"/>
+    <meta name="twitter:description" th:content="#{twitter.description}"/>
+    <meta name="twitter:title" th:content="#{twitter.title}"/>
+    <meta name="twitter:url" th:content="#{twitter.url}"/>
+    <meta name="description" th:content="#{meta.description}"/>
+    <meta name="keywords" th:content="#{meta.keywords}"/>
+    <meta name="author" th:content="#{meta.author}"/>
+    <meta name="rating" content="General"/>
+
+    <link rel="shortcut icon" th:href="@{/assets/images/favicon.ico}"/>
+    <link th:href="@{/assets/css/bundle.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/assets/css/bundle/intlTelInput.css}" rel="stylesheet" type="text/css">
+
+    <link th:href="@{/assets/skins/all.css}" rel="stylesheet" type="text/css"/>
+
+
+
+
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://osarh.com","name":"الرئيسية"}}]}]</script>
+    <link th:href="@{/assets/css/style.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/assets/css/responsive.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/assets/css/helpers.css}" rel="stylesheet" type="text/css">
+    <meta name="format-detection" content="telephone=no">
+
+    <!--    <meta id="csrf" name="csrf-token" th:content="${_csrf.token}"/>-->
+    <!--    <meta id="csrf_header" name="csrf_header" th:content="${_csrf.headerName}"/>-->
+
+    <!--    <script type="application/ld+json">-->
+    <!--        [{"@context":"https://schema.org","@type":"Organization","url":"https://osarh.com","logo":"https://osarh.com/assets/images/logo.svg"},{"@context":"https://schema.org","@type":"WebSite","name":"عادل باهميم","alternateName":"ADEL BAHMIM","url":"https://osarh.com"}]-->
+    <!--    </script>-->
+    <!--    <script>-->
+    <!--        var merchantIdentifier = 'merchant.osarh.com';-->
+    <!--        function isLocalStorageAvailable() {-->
+    <!--            var test = 'test';-->
+    <!--            try {-->
+    <!--                localStorage.setItem(test, test);-->
+    <!--                localStorage.removeItem(test);-->
+    <!--                return true;-->
+    <!--            } catch (e) {-->
+    <!--                return false;-->
+    <!--            }-->
+    <!--        }-->
+    <!--    </script>-->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N2NBG64');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Facebook domain verification  -->
+    <meta name="facebook-domain-verification" content="jittqkxg5zq4n7hif9q0ym5gull9wo" />
+    <!-- End Facebook domain verification -->
+    <!-- GOOGLE ADSENSE  -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6871881642300221"
+            crossorigin="anonymous"></script>
+
+    <!-- Hotjar Tracking Code for https://osarh.com/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3098489,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 644622597 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-644622597"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-644622597');
+    </script>
+</head>
+
+<div th:fragment="common-nav">
+    <div class="page_loader"><img th:src="@{/assets/images/loader.gif}"/></div>
+    <div class="toast_messages" style="width: auto;"></div>
+    <script>
+        if(isLocalStorageAvailable()){
+
+            [].forEach.call(document.querySelectorAll('.hint-bar'), function (el) {
+                el.style.display = 'none';
+            });
+        }
+    </script><div class="mobile-menu">
+    <div class="mobile-ul">
+        <a th:href="#{index.url}" class="menu-logo"><img th:src="@{/assets/images/logo-white.svg}"/></a>
+        <a th:href="@{/login}" class="mobile-user-profile mobile-user-login">
+            <img th:src="@{/assets/images/user.png}"/>
+            <div class="mobile-user-info pt-2">
+                <h3>تسجيل الدخول</h3>
+            </div>
+        </a>
+        <div class="mobile-ul-wrap scrollable-area">
+            <ul>
+                <li><a href="https://osarh.com/page/31/%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82-%D8%A8%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%84%D8%A9" target="_blank">التسويق بالعمولة
+                </a></li>
+                <li><a href="https://osarh.com/trainers" target="">سجل كمدرب
+                </a></li>
+                <li class="drop-item">
+                    <a href="javascript:;" class="">
+                        الدورات الالكترونية
+                        <svg width="6" height="10" viewBox="0 0 6 10"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="//www.w3.org/2000/svg ">
+                            <path id="Shape"
+                                  d="M1.811,5,5.78,8.781a.69.69,0,0,1,0,1.01.777.777,0,0,1-1.061,0L.22,5.505a.69.69,0,0,1,0-1.01L4.72.209a.777.777,0,0,1,1.061,0,.69.69,0,0,1,0,1.01Z"
+                                  transform="translate(0 0)"/>
+                        </svg>
+                    </a>
+                    <div class="drop-menu">
+                        <ul>
+                            <li><a href="https://osarh.com/courses/category/7/%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84" target="">ريادة أعمال</a>
+                            </li>
+                            <li><a href="https://osarh.com/courses/category/4/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA" target="">تطوير الذات</a>
+                            </li>
+                            <li><a href="https://osarh.com/courses/category/5/%D8%A7%D9%84%D8%AA%D8%BA%D8%B0%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9" target="">تغذية ورياضة</a>
+                            </li>
+                            <li><a href="https://osarh.com/courses/category/1/%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86" target="">ثقافة وفنون</a>
+                            </li>
+                            <li><a href="https://osarh.com/courses" target="">كل الدورات</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="https://osarh.com/page/50/%D8%B5%D9%85%D9%91%D9%85-%D8%B3%D9%8A%D8%B1%D8%AA%D9%83-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B" target="">السيرة الذاتية
+                    <span class="badge badge-success custom-badge">جديد</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-icons">
+        <a href="javascript:;" class="mobile-menu-close">
+            <svg id="Combined_Shape" data-name="Combined Shape" width="10"
+                 height="10" viewBox="0 0 10 10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="//www.w3.org/2000/svg ">
+                <path id="Combined_Shape-2" data-name="Combined Shape"
+                      d="M8.781,9.79,5,6.01,1.219,9.79A.714.714,0,0,1,.209,8.781L3.99,5,.209,1.219A.715.715,0,0,1,1.219.209L5,3.99,8.781.209A.714.714,0,0,1,9.79,1.219L6.01,5,9.79,8.781a.714.714,0,1,1-1.01,1.01Z"
+                      fill="#fff"/>
+            </svg>
+        </a>
+        <div class="mobile-icons-wrapper">
+            <div class="mobile-menu-icons">
+                <div class="header-item">
+                    <a href="https://osarh.com/user/cart" class="header-icon cart">
+                        <svg width="22" height="20.164" viewBox="0 0 22 20.164"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             xsi:schemaLocation="//www.w3.org/2000/svg ">
+                            <path id="shopping-cart"
+                                  d="M21.1,25.009H3.895l-.256-2.848a.9.9,0,0,0-.9-.823H.9a.9.9,0,1,0,0,1.807h1.01L2.952,34.722a3.476,3.476,0,0,0,1.3,2.355,2.738,2.738,0,1,0,4.733.753h4.945a2.739,2.739,0,1,0,2.576-1.807H6.417a1.678,1.678,0,0,1-1.543-1.017l14.439-.849a.9.9,0,0,0,.824-.683l1.836-7.343A.9.9,0,0,0,21.1,25.009ZM6.411,39.695a.932.932,0,1,1,.932-.932A.933.933,0,0,1,6.411,39.695Zm10.1,0a.932.932,0,1,1,.932-.932A.933.933,0,0,1,16.507,39.695Zm2.038-7.3L4.631,33.21l-.574-6.394H19.939Z"
+                                  transform="translate(0 -21.338)"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-item actions-item">
+                    <a href="javascript:;" class="header-icon mobile-fav-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23.062" height="20.388"
+                             viewBox="0 0 23.062 20.388">
+                            <path id="Shape-2"
+                                  d="M652.5,509.745a4.727,4.727,0,0,1,3.363,1.392l.353.353,1.235,1.236,1.238-1.234.354-.353a4.753,4.753,0,1,1,6.72,6.723l-8.311,8.31-8.315-8.309a4.755,4.755,0,0,1,3.363-8.118m0-1.75a6.5,6.5,0,0,0-4.6,11.1l8.844,8.839h0a1,1,0,0,0,1.414,0L667,519.1a6.5,6.5,0,0,0-9.194-9.2l-.353.352-.353-.353a6.485,6.485,0,0,0-4.6-1.9Z"
+                                  transform="translate(-645.919 -507.92)" stroke="#000" stroke-width="0.15"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="login-mobile-menu dropdown-menu-item mobile-login">
+        <div class="notifications-title">
+            <h3>دخول</h3>
+            <a href="#" class="login-mobile-menu-close">
+                <svg id="Combined_Shape" data-name="Combined Shape" xmlns="http://www.w3.org/2000/svg" width="10"
+                     height="10"
+                     viewBox="0 0 10 10">
+                    <path id="Combined_Shape-2" data-name="Combined Shape"
+                          d="M8.781,9.79,5,6.01,1.219,9.79A.714.714,0,0,1,.209,8.781L3.99,5,.209,1.219A.715.715,0,0,1,1.219.209L5,3.99,8.781.209A.714.714,0,0,1,9.79,1.219L6.01,5,9.79,8.781a.714.714,0,1,1-1.01,1.01Z"
+                          fill="#fff"/>
+                </svg>
+            </a>
+        </div>
+        <div class="notf-items scrollable-area">
+            <div class="notf-item">
+                <a href="/login">
+                    <svg xmlns="//www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path id="Combined_Shape" data-name="Combined Shape"
+                              d="M17,20a1,1,0,0,1-1-1V17a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V17a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,17,20ZM9,10a5,5,0,1,1,5-5A5.006,5.006,0,0,1,9,10ZM9,2a3,3,0,1,0,3,3A3,3,0,0,0,9,2Z"
+                              transform="translate(0 0)"/>
+                    </svg>
+
+                    <div class="notf-content">
+                        <h3>دخول كطالب</h3>
+
+                    </div>
+                </a>
+            </div>
+            <div class="notf-item">
+                <a href="https://osarh.com/trainers/login">
+                    <svg id="Component_64_1" data-name="Component 64 – 1"
+                         xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                         width="18" height="22.516" viewBox="0 0 18 22.516">
+                        <defs>
+                            <clipPath id="clip-path">
+                                <path id="Path_761" data-name="Path 761"
+                                      d="M729,582a1,1,0,0,1-1-1v-2a3,3,0,0,0-3-3h-8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0v-2a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,729,582Zm-8-10a5,5,0,1,1,5-5A5,5,0,0,1,721,572Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,721,564Z"/>
+                            </clipPath>
+                        </defs>
+                        <g id="Group_211" data-name="Group 211" transform="translate(-712 -562)">
+                            <path id="Combined_Shape-2" data-name="Combined Shape-2"
+                                  d="M729,582a1,1,0,0,1-1-1v-2a3,3,0,0,0-3-3h-8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0v-2a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,729,582Zm-8-10a5,5,0,1,1,5-5A5,5,0,0,1,721,572Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,721,564Z"/>
+                            <g id="Group_237" data-name="Group 237">
+                            </g>
+                        </g>
+                        <g id="Group_146" data-name="Group 146" transform="translate(-712 -562)">
+                            <path id="Combined_Shape-2-2" data-name="Combined Shape-2"
+                                  d="M721,584.516a2.508,2.508,0,0,1-2.508-2.509v-3.481a.656.656,0,0,1,.192-.464l1.853-1.854a.657.657,0,0,1,.927,0l1.853,1.854a.654.654,0,0,1,.192.463v3.482A2.509,2.509,0,0,1,721,584.516Zm1.021-2.509v-2.986l-1.021-1.2-1,1.2v2.986c0,.662.339.929,1,.929h0C721.662,582.936,722.021,582.669,722.021,582.007Z"/>
+                        </g>
+                    </svg>
+                    <div class="notf-content">
+                        <h3>﻿دخول كمدرب</h3>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-wrap new-header-wrap">
+                <div class="main-header d-flex">
+                    <a href="https://osarh.com" class="logo">
+                        <img src="https://osarh.com/assets/images/logo.svg" width="116"/>
+                    </a>
+                    <form class="inline-search-form header-search" action="https://osarh.com/search/courses">
+                        <label>
+                            <input type="text" placeholder="ماذا تود أن تتعلم ؟" name="q" autocomplete="off"/>
+                        </label>
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M18.292,19.707l-3.678-3.678a9.009,9.009,0,1,1,1.414-1.414l3.678,3.678a1,1,0,0,1-1.415,1.415ZM2,9a7,7,0,0,0,11.87,5.024,1,1,0,0,1,.154-.154A7,7,0,1,0,2,9Z"
+                                      fill="#1A43A8"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="main-menu-wrap">
+                        <ul>
+                            <li class=" ">
+                                <a href="https://osarh.com/page/31/%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82-%D8%A8%D8%A7%D9%84%D8%B9%D9%85%D9%88%D9%84%D8%A9">
+                                    التسويق بالعمولة
+
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="https://osarh.com/trainers">
+                                    سجل كمدرب
+
+                                </a>
+                            </li>
+                            <li class="drop-item ">
+                                <a href="https://osarh.com/courses">
+                                    الدورات الالكترونية
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                                        <path id="Shape"
+                                              d="M1.811,5,5.78,8.781a.69.69,0,0,1,0,1.01.777.777,0,0,1-1.061,0L.22,5.505a.69.69,0,0,1,0-1.01L4.72.209a.777.777,0,0,1,1.061,0,.69.69,0,0,1,0,1.01Z"
+                                              transform="translate(0 0)"/>
+                                    </svg>
+
+                                </a>
+                                <div class="drop-menu">
+                                    <ul class="scrollable-area">
+                                        <li><a href="https://osarh.com/courses/category/7/%D8%B1%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84" target="">ريادة أعمال</a></li>
+                                        <li><a href="https://osarh.com/courses/category/4/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA" target="">تطوير الذات</a></li>
+                                        <li><a href="https://osarh.com/courses/category/5/%D8%A7%D9%84%D8%AA%D8%BA%D8%B0%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9" target="">تغذية ورياضة</a></li>
+                                        <li><a href="https://osarh.com/courses/category/1/%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86" target="">ثقافة وفنون</a></li>
+                                        <li><a href="https://osarh.com/courses" target="">كل الدورات</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" new">
+                                <a href="https://osarh.com/page/50/%D8%B5%D9%85%D9%91%D9%85-%D8%B3%D9%8A%D8%B1%D8%AA%D9%83-%D8%A7%D9%84%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B">
+                                    السيرة الذاتية
+                                    <span class="badge custom-badge badge-success">جديد</span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    <div class="header-items">
+                    <div class="header-item">
+                        <a href="https://osarh.com/user/cart" class="header-icon cart">
+                            <svg xmlns="//www.w3.org/2000/svg" width="22" height="20.164"
+                                 viewBox="0 0 22 20.164">
+                                <path id="shopping-cart"
+                                      d="M21.1,25.009H3.895l-.256-2.848a.9.9,0,0,0-.9-.823H.9a.9.9,0,1,0,0,1.807h1.01L2.952,34.722a3.476,3.476,0,0,0,1.3,2.355,2.738,2.738,0,1,0,4.733.753h4.945a2.739,2.739,0,1,0,2.576-1.807H6.417a1.678,1.678,0,0,1-1.543-1.017l14.439-.849a.9.9,0,0,0,.824-.683l1.836-7.343A.9.9,0,0,0,21.1,25.009ZM6.411,39.695a.932.932,0,1,1,.932-.932A.933.933,0,0,1,6.411,39.695Zm10.1,0a.932.932,0,1,1,.932-.932A.933.933,0,0,1,16.507,39.695Zm2.038-7.3L4.631,33.21l-.574-6.394H19.939Z"
+                                      transform="translate(0 -21.338)"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-item mob-search">
+                        <a href="https://osarh.com/search/courses" class="header-icon search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M18.292,19.707l-3.678-3.678a9.009,9.009,0,1,1,1.414-1.414l3.678,3.678a1,1,0,0,1-1.415,1.415ZM2,9a7,7,0,0,0,11.87,5.024,1,1,0,0,1,.154-.154A7,7,0,1,0,2,9Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-item">
+                        <a href="javascript:;" class="header-link login dropdown-menu-toggle">دخول</a>
+                        <div class="user-login-menu dropdown-menu-item">
+                            <a href="/login">
+                                <svg xmlns="//www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                                    <path id="Combined_Shape" data-name="Combined Shape"
+                                          d="M17,20a1,1,0,0,1-1-1V17a3,3,0,0,0-3-3H5a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V17a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,17,20ZM9,10a5,5,0,1,1,5-5A5.006,5.006,0,0,1,9,10ZM9,2a3,3,0,1,0,3,3A3,3,0,0,0,9,2Z"
+                                          transform="translate(0 0)"/>
+                                </svg>
+                                <span>دخول كطالب</span>
+                            </a>
+                            <a href="https://osarh.com/trainers/login">
+                                <svg id="Component_64_1" data-name="Component 64 – 1"
+                                     xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink"
+                                     width="18" height="22.516" viewBox="0 0 18 22.516">
+                                    <defs>
+                                        <clipPath id="clip-path">
+                                            <path id="Path_761" data-name="Path 761"
+                                                  d="M729,582a1,1,0,0,1-1-1v-2a3,3,0,0,0-3-3h-8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0v-2a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,729,582Zm-8-10a5,5,0,1,1,5-5A5,5,0,0,1,721,572Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,721,564Z"/>
+                                        </clipPath>
+                                    </defs>
+                                    <g id="Group_211" data-name="Group 211" transform="translate(-712 -562)">
+                                        <path id="Combined_Shape-2" data-name="Combined Shape-2"
+                                              d="M729,582a1,1,0,0,1-1-1v-2a3,3,0,0,0-3-3h-8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0v-2a5.006,5.006,0,0,1,5-5h8a5.006,5.006,0,0,1,5,5v2A1,1,0,0,1,729,582Zm-8-10a5,5,0,1,1,5-5A5,5,0,0,1,721,572Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,721,564Z"/>
+                                        <g id="Group_237" data-name="Group 237">
+                                        </g>
+                                    </g>
+                                    <g id="Group_146" data-name="Group 146" transform="translate(-712 -562)">
+                                        <path id="Combined_Shape-2-2" data-name="Combined Shape-2"
+                                              d="M721,584.516a2.508,2.508,0,0,1-2.508-2.509v-3.481a.656.656,0,0,1,.192-.464l1.853-1.854a.657.657,0,0,1,.927,0l1.853,1.854a.654.654,0,0,1,.192.463v3.482A2.509,2.509,0,0,1,721,584.516Zm1.021-2.509v-2.986l-1.021-1.2-1,1.2v2.986c0,.662.339.929,1,.929h0C721.662,582.936,722.021,582.669,722.021,582.007Z"/>
+                                    </g>
+                                </svg>
+                                <span>دخول كمدرب</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="https://osarh.com/user/register" class="header-link register">إنشئ حساب مجاناً</a>
+
+                    <div class="header-item menu-header-item">
+                        <a href="javascript:;" class="header-icon menu">
+                            <svg xmlns="//www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8">
+                                <path id="Combined_Shape" data-name="Combined Shape"
+                                      d="M1,8A1,1,0,0,1,1,6H14a1,1,0,0,1,0,2ZM1,2A1,1,0,0,1,1,0H14a1,1,0,0,1,0,2Z"
+                                      fill="#fff"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

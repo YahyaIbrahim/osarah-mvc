@@ -19,7 +19,7 @@ spring:
       leakDetectionThreshold: 30000
     url: jdbc:mysql://localhost:3306/osara
     username: root
-    password: root
+    password: Password
   jpa:
     hibernate:
       ddl-auto: update
