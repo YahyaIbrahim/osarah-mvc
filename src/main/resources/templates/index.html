@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html  th:with="lang=${#locale.getLanguage()},dir=${#locale.getLanguage()=='ar'?'rtl':'ltr'},arabic=${#locale.getLanguage() == 'ar'}"
-       th:lang="${lang}"
-       th:dir="${dir}">
+<html  th:with="lang=${#locale.getLanguage()},dir=${#locale.getLanguage()=='ar'?'rtl':'ltr'},arabic=${#locale.getLanguage()=='ar'}"
+        th:lang="${lang}"
+        th:dir="${dir}" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="#{system.title}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
