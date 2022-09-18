@@ -2,6 +2,7 @@ package com.wellware.osara.serives;
 
 import com.wellware.osara.config.security.CustomUserDetails;
 import com.wellware.osara.data.entities.User;
+import com.wellware.osara.data.objects.Cert;
 import com.wellware.osara.data.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,8 +22,14 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public void sign(){
+    public Cert retrieveRawData(String name,String courseName,String duration,String currentDay){
 
+        Cert cert = new Cert();
+        cert.setName(name);
+        cert.setCourseName(courseName);
+        cert.setDuration(duration);
+        cert.setCurrentDay(currentDay);
+        return cert;
     }
 
 
